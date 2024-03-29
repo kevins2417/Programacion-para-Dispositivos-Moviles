@@ -1,6 +1,7 @@
-/*Piedra, Papel, Tijera. Escriba un programa que realice el juego de piedra, papel o tijera.
-La computadora debe elegir de manera aleatoria la opción a elegir. Después debe preguntar al usuario
-que opción quiere. Imprimir si ganó, perdió o empató.
+/*Adivina Número. Escribe un programa que genere un número aleatorio entre 1 y 30, luego pida al usuario que adivine el número.
+Proporciona pistas indicando si el número a adivinar es mayor o menor que el número ingresado por el usuario.
+Continúa solicitando intentos hasta que el usuario adivine correctamente el número.Tienes 5 intentos, si se acaba debe imprimir game over.
+De lo contrario mostrar un mensaje de felicitación por ganar el juego.
 
 Autor: Kevin Chambilla
 Creación: 27/03/2024
