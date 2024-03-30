@@ -6,20 +6,25 @@ De lo contrario mostrar un mensaje de felicitación por ganar el juego.
 Autor: Kevin Chambilla
 Creación: 27/03/2024
 */
+
+//se importa la clase Random de la biblioteca de Kotlin
 import kotlin.random.Random
 
 fun main(){
+	//se genera un número aleatorio entre 1 y 30
     val Aleatorio = Random.nextInt(1, 31)
     var intentos = 5
     var adivinado = false
 
     println("Adivina un número entre 1 y 30.")
 
+	//bucle para permitir los 5 intentos
     while (intentos > 0 && !adivinado) {
         println("Intentos restantes: $intentos")
         println("Ingresa tu número:")
         val numero = readLine()?.toIntOrNull()
 
+		//se comprueba si el número ingresado es igual al aleatorio y se brinda las pistas
         if (numero != null) {
             if (numero == Aleatorio) {
                 println("Ganaste adivinaste el número $Aleatorio!")
