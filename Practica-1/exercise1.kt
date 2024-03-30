@@ -16,11 +16,13 @@ fun main() {
 
     println("Ingrese su salario:")
     val g = readLine()?.toDoubleOrNull()
-
+	
+	//verifica si la puntuacion y el dinero son validos
     if (p != null && g != null) {
         val ni: String
         val di: Double
-
+		
+		//Determina el ivel de rendimiento basado en la puntuación ingresada
         when {
             p >= 0 && p <= 3 -> {
                 ni = "Inaceptable"
@@ -35,7 +37,7 @@ fun main() {
                 ni = "Puntuación inválida"
             }
         }
-
+		
         di = g * (p / 10.0)
 
         println("Nivel de Rendimiento: $ni")
