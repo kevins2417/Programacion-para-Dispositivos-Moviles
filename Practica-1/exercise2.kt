@@ -12,12 +12,15 @@ fun main() {
     val pc = opcion[random.nextInt(opcion.size)]
 
     println("Elige una opción (piedra, papel o tijera):")
+	//lee y convierte la opción en minusculas
     val person = readLine()?.toLowerCase()
-
+	
+	//verifica si opción elegia es piedra, papel o tijera
     if (person in opcion) {
         println("La pc eligió: $pc")
         println("elegiste: $person")
-
+		
+		//compara las elecciones para que salga el resultado
         if (person == pc) {
             println("empate")
         } else if ((person == "piedra" && pc == "tijera") ||
