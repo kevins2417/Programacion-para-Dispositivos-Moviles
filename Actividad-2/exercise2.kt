@@ -2,7 +2,7 @@
 Implementa métodos set y get para establecer y obtener el precio y el descuento, y añade un método para calcular el precio final después de aplicar el descuento.
 Utilice el set para validar datos.
 
-Autor: Kevin Chambilla.
+Autor: Kevin Chambilla
 Creación: 28/03/2024
  */
 
