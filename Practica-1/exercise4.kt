@@ -14,6 +14,7 @@ Creación: 27/03/2024
 fun main() {
     var continuar = true
 
+	//función para realizar las operaciones
     fun Operacion(nombreOp: String, operacion: (Double, Double) -> Double) {
         println("=== $nombreOp ===")
         println("Ingrese el primer número:")
@@ -36,6 +37,7 @@ fun main() {
         println("El resultado de la $nombreOp es: $resultado")
     }
 
+	//menu para las operaciones que se requiera
     while (continuar) {
         println("==== Menú ====")
         println("1. Suma")
