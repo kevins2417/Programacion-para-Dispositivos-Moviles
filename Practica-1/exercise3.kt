@@ -14,15 +14,18 @@ fun main(){
     println("Cantidad de alumnos:")
     val alumnos = readLine()?.toIntOrNull()
 
+	//verifica si la cantidad de alumnos es diferente de cero e inicializa el valor minimo y maximo.
     if (alumnos != null && alumnos > 0){
         var edadmax = Int.MIN_VALUE
         var edadmin = Int.MAX_VALUE
         var esp = ""
 
+		//solicita la edad de cada alumno
         for (i in 1..alumnos){
             println("edad del alumno$i")
             val edad = readLine()?.toIntOrNull()
-
+			
+			//identifica la edad minima y maxima
             if (edad != null){
                 if (edad > edadmax){
                     edadmax = edad
@@ -30,7 +33,8 @@ fun main(){
                 if (edad < edadmin){
                     edadmin = edad
                 }
-
+				
+				// hace la cadena de todas las edades
                 esp += if (i == alumnos){
                     "$edad"
                 } else {
